@@ -1,6 +1,5 @@
 import { CurrencyPipe } from '@angular/common';
-import { Component, computed, inject, input } from '@angular/core';
-import type { InvestmentOutput } from '../investment-output.model';
+import { Component, computed, inject } from '@angular/core';
 import { InvestmentService } from '../investment.service';
 
 @Component({
