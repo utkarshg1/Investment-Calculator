@@ -1,5 +1,5 @@
 @if (!results) {
-<p>Please enter some values and press "Calculate"</p>
+<p class="center">Please enter some values and press "Calculate"</p>
 } @else {
 <table>
   <thead>
@@ -11,6 +11,16 @@
       <th>Invested Capital</th>
     </tr>
   </thead>
-  <tbody></tbody>
+  <tbody>
+    @for (result of results; track result.year) {
+    <tr>
+      <td>{{ result.year }}</td>
+      <td>{{ result.valueEndOfYear }}</td>
+      <td>{{ result.interest }}</td>
+      <td>{{ result.totalInterest }}</td>
+      <td>{{ result.totalAmountInvested }}</td>
+    </tr>
+    }
+  </tbody>
 </table>
 }
