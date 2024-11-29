@@ -10,7 +10,6 @@ import { InvestmentService } from '../investment.service';
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  // results = input<InvestmentOutput>();
   private investmentService = inject(InvestmentService);
 
   results = computed(() => this.investmentService.resultData());
